@@ -1663,6 +1663,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
+import { Form } from "@/components/Form";
 import { toastCustom } from "@/components/Toast";
 import { AdminBackButton } from "@/features/admin/AdminBackButton";
 import { AdminCancelButton } from "@/features/admin/AdminCancelButton";
@@ -1671,10 +1672,11 @@ import {
   AdminLayoutPageContent,
   AdminLayoutPageTopBar,
 } from "@/features/admin/AdminLayoutPage";
+import { ProjectForm } from "@/features/projects/ProjectForm";
 import {
-  ProjectForm,
-  ProjectFormFields,
-} from "@/features/projects/ProjectForm";
+  FormFieldsProject,
+  zFormFieldsProject,
+} from "@/features/projects/schemas";
 import { trpc } from "@/lib/trpc/client";
 import { isErrorDatabaseConflict } from "@/lib/trpc/errors";
 
